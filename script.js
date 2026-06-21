@@ -220,7 +220,7 @@ function drawWinningLine(cells){
                 left: "5%",
                 transform: `rotate(${angle}deg)`
             });
-            line.style.setProperty("--line-length", "140%");
+            line.style.setProperty("--line-length", "127%");
             break;
 
         case "2,4,6":
@@ -229,7 +229,7 @@ function drawWinningLine(cells){
                 left: "5%",
                 transform: `rotate(${-angle}deg)`
             });
-            line.style.setProperty("--line-length", "140%");
+            line.style.setProperty("--line-length", "127%");
             break;
     }
 
