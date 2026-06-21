@@ -10,9 +10,9 @@ let player1 = "",
     timer,
     timeleft;
 
-const clicksound = new Audio("audio/click.mp3");
-const startsound =  new Audio("audio/start.mp3");
-const winsound = new Audio("audio/win.mp3");
+const clicksound = new Audio("click.mp3");
+const startsound =  new Audio("start.mp3");
+const winsound = new Audio("win.mp3");
 
 clicksound.load();
 startsound.load();
