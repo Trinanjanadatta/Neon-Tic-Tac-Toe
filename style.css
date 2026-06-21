@@ -10,7 +10,7 @@ body{
     background-repeat: no-repeat;
     overflow: hidden;
     font-family: 'Norwester', sans-serif;
-    font-size: clamp(30px, 2.5vw, 40px);
+    font-size: clamp(25px, 2.5vw, 40px);
     margin: 0;
 }
 
@@ -360,7 +360,7 @@ div{
             font-family: 'Norwester', sans-serif;
             height: 60%;
             width: 90%;
-            font-size: 30px;
+            font-size: clamp(25px, 2.5vw, 40px);
             margin: 5px;
         }
     }
@@ -383,7 +383,7 @@ div{
             border-radius: 25px;
             height: 80%;
             margin: 10px;
-            font-size: 30px;
+            font-size: clamp(20px, 2.5vw, 40px);
             font-family: 'Norwester', sans-serif;
 
         }
@@ -486,9 +486,13 @@ div{
         }
 
         .namePopupButtons{
-            position: absolute;
-            top: 70%;
-            left: 15%;
+            display: flex;
+            justify-content: right;
+            margin-top: 40px;
+
+            .buttons{
+                width: 30%;
+            }
         }
     }
     .status{
@@ -509,7 +513,7 @@ div{
         transform: none;
 
         width: 70vw;
-        height: 70vw;
+        height: 40vh;
         margin: 2vh auto;
     }
 
@@ -533,7 +537,7 @@ div{
         display: flex;
         gap: 2vw;
         position: absolute;
-        top: 110vw;
+        top: 65vh;
         left: 5%;
         height: 10vh;
     }
@@ -562,6 +566,7 @@ div{
     height: 10vh;
 
     position: absolute;
+    top: 75%;
     left: 5%;
 
     display: flex;
@@ -571,7 +576,8 @@ div{
 
     .option{
         width: 30%;
-        top: 130vw;
+        top: 75vh;
+        font-size: clamp(25px, 2.5vw, 40px);
     }
 
     .rematch.option{
