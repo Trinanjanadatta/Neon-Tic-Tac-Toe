@@ -149,6 +149,11 @@ function drawWinningLine(cells){
     line.style.display = "block";
 
     const key = cells.join(",");
+    const board = document.querySelector(".board");
+    const width = board.offsetWidth;
+    const height = board.offsetHeight;
+
+    const angle = Math.atan(height / width) * 180 / Math.PI;
 
     switch(key){
 
@@ -213,18 +218,18 @@ function drawWinningLine(cells){
             Object.assign(line.style, {
                 top: "5%",
                 left: "5%",
-                transform: "rotate(45deg)"
+                transform: `rotate(${angle}deg)`
             });
-            line.style.setProperty("--line-length", "127%");
+            line.style.setProperty("--line-length", "140%");
             break;
 
         case "2,4,6":
             Object.assign(line.style, {
                 top: "95%",
                 left: "5%",
-                transform: "rotate(-45deg)"
+                transform: `rotate(${-angle}deg)`
             });
-            line.style.setProperty("--line-length", "127%");
+            line.style.setProperty("--line-length", "140%");
             break;
     }
 
