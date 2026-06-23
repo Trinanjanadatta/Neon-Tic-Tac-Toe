@@ -2,6 +2,10 @@
 
 A modern neon-themed Tic-Tac-Toe game built using HTML, CSS, and JavaScript.
 
+ ## Live Demo
+
+ https://neon-tic-tac-toe-ashy.vercel.app/
+
 ## Features
 
 * Custom player names
